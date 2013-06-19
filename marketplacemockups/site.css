@@ -52,17 +52,21 @@ nav { z-index: 0; position: absolute; width:200px; height:100%; overflow: auto; 
 #product-photos img:nth-child(2) { display: none; }
 .wireframe #product-photos img:nth-child(2) { display: block; }
 
+#product-photos, #photo-drop { text-align: center; }
 #product-photos img, #photo-drop img { width:70%; max-width: 400px; }
 #product-purchase .r { text-align: right; }
 #product-description, #seller-info { text-align: left; }
+#product-title h1, #page-title h1 { margin-left:60px; }
 
 /* Add Page */
 #photo-drop { position: relative; }
 .wireframe #product-inputs { height:30em; }
 #photo-drop img:nth-child(2) { display: none; }
 .wireframe #photo-drop img:nth-child(2) { display: block; }
-#photo-drop img:nth-child(3) { border: 5px dashed grey; }
-#photo-drop button { position: absolute; bottom:0; margin: auto; width: 150px; left:40%; }
+#photo-drop img:nth-child(3) { border: 5px dashed grey; display: block; margin:auto; }
+.wireframe #photo-drop img:nth-child(3) { display: none; }
+#photo-drop button { margin: auto; width: 150px; margin-top: 1em; }
+#product-submit button { margin-right:1em; }
 
 
 /* Generic */
