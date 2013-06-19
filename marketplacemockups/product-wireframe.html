@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Oregon Marketplace</title>
+
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="site.js"></script>
+
+    <script type="text/javascript">
+
+        function hideAddressBar(){
+            if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio) {
+                document.documentElement.style.height=(window.outerHeight/window.devicePixelRatio)+'px';
+            }
+            setTimeout(window.scrollTo(1,1),0);
+        }
+        window.addEventListener("load",function(){hideAddressBar();});
+        window.addEventListener("orientationchange",function(){hideAddressBar();});
+
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="site.css" />
+	<link rel="stylesheet" href="wireframe.css" />
+</head>
+
+<body>
+    <div id="switcher">
+        <a id="setWireframes">Wireframes</a>
+        | <a id="setMockups">Mockups</a>
+    </div>
+	<div id="page">
+		<a class="back" href="index-wireframe.html">Back</a>
+		<section id="product-title">
+            <h1>Product Title</h1>
+            <h1>Kitty for Sale</h1>
+        </section>
+		<section id="product-photos">
+            <h1>Product Photos</h1>
+            <img src="photo-placeholder.png" />
+            <img src="http://placekitten.com/g/800/600" />
+        </section>
+		<section id="product-purchase">
+            <h1>Purchase Details</h1>
+            <button class="l">Make an Offer</button>
+            <div class="r">
+                <div class="bigThings">$9.99</div>
+                <div>2 pending offers</div>
+            </div>
+            <div class="c"></div>
+        </section>
+		<section id="seller-info">
+            <h1>Seller Info</h1>
+            <div class="l">
+                <div>Seller: Nick Cage</div>
+                <div>Posted On: 6/17/13</div>
+                <div>New/Used: Used</div>
+                <div>Tags: <a href="#">Cat</a>, <a href="#">Animal</a></div>
+            </div>
+
+            <img class="r" src="http://placecage.com/g/75/75" />
+            <div class="c"></div>
+        </section>
+		<section id="product-description">
+            <h1>Product Description</h1>
+            <p>
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam quis risus eget urna mollis ornare vel eu leo.
+            </p><p>
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue.
+            </p>
+        </section>
+	</div>
+
+</body>

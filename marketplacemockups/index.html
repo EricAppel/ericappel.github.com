@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Oregon Marketplace</title>
+
+    <script type="text/javascript">
+
+        function hideAddressBar(){
+            if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio) {
+                document.documentElement.style.height=(window.outerHeight/window.devicePixelRatio)+'px';
+            }
+            setTimeout(window.scrollTo(1,1),0);
+        }
+        window.addEventListener("load",function(){hideAddressBar();});
+        window.addEventListener("orientationchange",function(){hideAddressBar();});
+
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="reset.css" />
+	<link rel="stylesheet" href="site.css" />
+	<link rel="stylesheet" href="wireframe.css" />
+</head>
+
+<body class="wireframe">
+	<div id="page">
+        <section id="categories"><h1>Categories</h1></section>
+		<section id="site-title"><h1>Site Title</h1></section>
+        <section id="search"><h1>Search</h1></section>
+		<section id="recent-products"><h1>Recent Products</h1></section>
+		<section id="product-description"><h1>Product Description</h1></section>
+	</div>
+
+</body>
